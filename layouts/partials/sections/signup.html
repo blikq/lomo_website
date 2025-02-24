@@ -59,7 +59,7 @@
             loader.style.display = 'none';
             loadButton.style.display = 'inline-block;'
             demoForm.reset();
-        }, 5000);
+        }, 8000);
 
         
         const email = document.querySelector('input[type="email"]').value;
@@ -78,13 +78,15 @@
         })
         .then(response => {
             if (response.ok) {
-                loadButton.style.display = "none";
-                loader.style.display = 'none';
-                loadButton.disabled = true;
+            loadButton.style.display = "none";
+            loader.style.display = 'none';
+            loadButton.disabled = true;
 
-                alert('Thank you for subscribing');
+            alert('Thank you for subscribing');
+            } else if (response.status === 422) {
+            alert('You are already subscribed');
             } else {
-                alert('Failed to subscribe. Please try again.');
+            alert('Failed to subscribe. Please try again.');
             }
         })
         .catch(error => {
