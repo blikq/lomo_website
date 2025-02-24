@@ -1,4 +1,5 @@
-baseURL:  "http://localhost:1313"
+baseURL:  "https://lomolive.vercel.app"
+
 languageCode: en-US
 title: "My Potfolio"
 
