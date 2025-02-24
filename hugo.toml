@@ -1,11 +1,11 @@
 baseURL      = "https://lomolive.vercel.app"
 languageCode = "en-us"
-title        = 'My Portfolio'
+title        = 'Lomo website'
 
 
 [params]
-  description = "Al-ameen Musa personal website"
-  keywords    = "Alameen Musa, personal website, blog, portfolio"
+  description = "Lomo's website"
+  keywords    = "Lomo's website"
 
   [params.author]
     name = 'Al-ameen Musa'

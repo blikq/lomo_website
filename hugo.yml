@@ -1,11 +1,11 @@
 baseURL:  "https://lomolive.vercel.app"
 
 languageCode: en-US
-title: "My Potfolio"
+title: "Lomo's website"
 
 params:
-  description: "Al-ameen Musa personal website"
-  keywords: "Alameen Musa, personal website, blog, portfolio"
+  description: "Lomo's website"
+  keywords: "Lomo website"
   author:
     name: "Al-ameen Musa"
 
