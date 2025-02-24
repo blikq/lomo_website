@@ -1,0 +1,126 @@
+<h2 class="text-center text-4xl md:text-5xl lg:text-7xl p-5 rounded-xl font-medium font-poppins text-gray-400">
+    AI POWERED ENGAGEMENT BOOSTING SOFTWARE.
+    
+</h2>
+
+<div class="w-full flex items-center justify-center">
+    <form class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 flex items-center justify-center">
+        <input type="email" class="mr-5 w-4xl p-7 rounded-l-xl text-3xl" placeholder="Enter your email address" />
+        <button class="w-full p-2 bg-gray-400 rounded-r-xl" id="loadButton">
+            <i class='p-4 bx bx-send text-5xl'></i>
+        </button>
+        <div class="loader">
+            <i class='bx bx-loader-alt' id="loader"></i>
+        </div>
+    </form>
+
+</div>
+
+<h2 class="text-center text-4xl md:text-5xl lg:text-7xl p-5 rounded-xl font-medium font-poppins text-gray-400">
+    Be The First To Know.
+</h2>
+<br>
+
+<script>
+    const form = document.querySelector('form');
+    var ipAddress = 'none';
+
+    // function getIpAddress(){
+        document.addEventListener("DOMContentLoaded", function() {
+            // Fetch the IP address from the API
+            fetch("https://api.ipify.org?format=json")
+                .then(response => response.json())
+                .then(data => {
+                    // Display the IP address on the screen
+                    ipAddress = data.ip;
+                    // return data.ip;
+                })
+                .catch(error => {
+                    console.error("Error fetching IP address:", error);
+                });
+        });
+    // }
+    const loadButton = document.getElementById('loadButton');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        loadButton.disabled = true;
+        loadButton.style.display = "none";
+        const loader = document.getElementById('loader');
+        loadButton.disabled = true;
+        loader.style.display = 'inline-block';
+
+        setTimeout(() => {
+        
+            // Restore the button state 
+            //after the operation is done
+            loadButton.disabled = false;
+            loader.style.display = 'none';
+            loadButton.style.display = 'inline-block;'
+            demoForm.reset();
+        }, 5000);
+
+        
+        const email = document.querySelector('input[type="email"]').value;
+
+
+        // const ipAddress = getIpAddress();
+        const data = { email: email, ipaddress: ipAddress };
+        console.log(data);
+        fetch('https://lomo-eve.onrender.com/people/', {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json',
+
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
+            if (response.ok) {
+                loadButton.style.display = "none";
+                loader.style.display = 'none';
+                loadButton.disabled = true;
+
+                alert('Thank you for subscribing');
+            } else {
+                alert('Failed to subscribe. Please try again.');
+            }
+        })
+        .catch(error => {
+            alert(error)
+            // alert('An error occurred. Please try again later.');
+        });
+    });
+
+    
+</script>
+
+<style>
+    #loader     {
+        display: none;
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        /* border-top: 4px solid grey; */
+        /* border-radius: 50%; */
+        /* width: 60px;
+        height: 60px; */
+        font-size: 3rem;
+        animation: spin 2s linear infinite;
+        margin-left: 40px;
+    }
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+    
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    .loading {
+        background-color: #ccc;
+        pointer-events: none;
+    }
+</style>

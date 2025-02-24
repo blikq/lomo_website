@@ -1,0 +1,52 @@
+# The list of companies
+title = "Road Map (This may be Subjected to change)"
+
+[[company]]
+  name = "Launch"
+  date = "July 2025"
+  role = "Not Achieved"
+  text = [
+    "Launch the product to the public",
+  ]
+
+[[company]]
+  name = "Beta Testing"
+  date = "June 2025"
+  role = "Not Achieved"
+  text = [
+    "Release the product to the public for testing and feedback",
+  ]
+
+
+[[company]]
+  name = "Early Access"
+  date = "April - May 2025"
+  role = "Not Achieved"
+  text = [
+    "Release the product to the pre-registered users for testing and scrutiny",
+  ]
+
+[[company]]
+  name = "Make MVP"
+  date = "March 2025"
+  role = "Not Achieved"
+  text = [
+    "Create a minimum viable product",
+  ]
+
+
+[[company]]
+  name = "Shocase the Idea"
+  date = "March 2025"
+  role = "Not Achieved"
+  text = [
+    "Make Grphics or templates to showcase the idea",
+  ]
+
+[[company]]
+  name = "Share the Plan"
+  date = "Feb 2025"
+  role = "Achieved"
+  text = [
+    "Let the people know",
+  ]

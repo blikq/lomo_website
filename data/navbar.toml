@@ -1,0 +1,21 @@
+title = "LOMO"
+logo  = "img/lomo_logo.png"
+
+
+# [[menu]]
+#   text        = "Home"
+#   description = "Welcome to my personal website"
+#   link        = "/"
+#   target      = "_self"
+
+# [[menu]]
+#   text        = "Posts"
+#   description = "Read my latest posts"
+#   link        = "/posts"
+#   target      = "_self"
+
+[button]
+  enabled = false
+  text    = "Get my CV"
+  link    = "files/cv.pdf"
+  target  = "_blank"

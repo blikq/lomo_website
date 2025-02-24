@@ -1,0 +1,26 @@
+title = "Features"
+
+[[skill]]
+  title = "Turbo Commenting"
+  text  = "Commenting is a great way to engage with your audience and keep them coming back to your site. With Turbo Comments, you can easily add commenting functionality to your site without the need for a third-party service. Turbo Comments is fast, lightweight, and easy to use, making it the perfect solution for adding comments to your site."
+  icon  = "bx bx-code-alt"
+
+[[skill]]
+  title = "15-sec Voice Notes"
+  text  = "Voice Notes is a simple and easy-to-use voice recording app that allows you to record and share voice notes with your friends and family. With Voice Notes, you can record voice notes up to 15 seconds in length and share them with anyone via email, text message, or social media. Voice Notes is perfect for capturing quick thoughts, reminders, and ideas on the go."
+  icon  = "bx bxs-component"
+
+[[skill]]
+  title = "Inline Discussions"
+  text  = "Inline Discussions is a powerful tool that allows you to add comments and discussions directly to your website. With Inline Discussions, you can create a more engaging and interactive experience for your users by allowing them to comment on specific sections of your site. Inline Discussions is easy to use and fully customizable, making it the perfect solution for adding discussions to your website."
+  icon  = "bx-planet"
+
+[[skill]]
+  title = "Polls and Surveys"
+  text  = "Polls and Surveys is a simple and easy-to-use tool that allows you to create and share polls and surveys with your audience. With Polls and Surveys, you can quickly gather feedback, opinions, and insights from your users to help you make better decisions. Polls and Surveys is fully customizable and can be embedded directly into your website, making it the perfect solution for collecting feedback from your audience."
+  icon  = "bx bx-poll"
+
+# [[skill]]
+#   title = "DevOps Practices"
+#   text  = "Experienced in implementing DevOps practices such as infrastructure as code, configuration management, and monitoring. Proficient in using tools such as Terraform, Ansible, and Prometheus. Well-versed in logging, monitoring, and alerting."
+#   icon  = "bx-cloud"
