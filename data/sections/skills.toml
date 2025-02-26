@@ -20,6 +20,11 @@ title = "Features"
   text  = "Polls and Surveys is a simple and easy-to-use tool that allows you to create and share polls and surveys with your audience. With Polls and Surveys, you can quickly gather feedback, opinions, and insights from your users to help you make better decisions. Polls and Surveys is fully customizable and can be embedded directly into your website, making it the perfect solution for collecting feedback from your audience."
   icon  = "bx bx-poll"
 
+[[skill]]
+  title = "More"
+  text  = "More features coming soon!"
+  icon  = "bx bx-dots-horizontal"
+
 # [[skill]]
 #   title = "DevOps Practices"
 #   text  = "Experienced in implementing DevOps practices such as infrastructure as code, configuration management, and monitoring. Proficient in using tools such as Terraform, Ansible, and Prometheus. Well-versed in logging, monitoring, and alerting."
