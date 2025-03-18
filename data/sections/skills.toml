@@ -21,6 +21,11 @@ title = "Features"
   icon  = "bx bx-poll"
 
 [[skill]]
+  title = "AI-agent Support"
+  text  = "Get a super optimized ai agent for your website. This will help users get quixk answers on niche questions concerning your service, thus bossting user experience."
+  icon  = "bx bx-chat"
+
+[[skill]]
   title = "More"
   text  = "More features coming soon!"
   icon  = "bx bx-dots-horizontal"
